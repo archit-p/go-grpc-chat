@@ -1,0 +1,12 @@
+syntax = "proto3";
+package chat;
+
+// exchanged messages
+message Message {
+	string body = 1;
+}
+
+// server / client service to exchange messages
+service ChatService {
+	rpc SayHello(Message) returns (Message) {}
+}

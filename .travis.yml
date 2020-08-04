@@ -1,0 +1,15 @@
+language: go
+
+go:
+  - 1.14.x
+
+before_install:
+  - sudo apt-get -y install protobuf-compiler
+
+install:
+  - git clone https://github.com/archit-p/go-grpc-chat
+
+script:
+  - cd go-grpc-chat
+  - make build
+
