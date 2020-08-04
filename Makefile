@@ -22,4 +22,4 @@ server:
 client:
 	go build -o client client.go
 
-build: proto server client
+build: server client
